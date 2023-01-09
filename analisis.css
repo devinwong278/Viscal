@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Navigation Bar */
+.nav-link {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+
+body {
+  background-color: #c6d2f1;
+  font-family: "Poppins", sans-serif;
+}
+
+.analisisPage {
+  padding: 1.5vw 3vw;
+}
+
+.stSearch {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1vw;
+}
+
+.stSearch h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 2vw;
+  color: #59606d;
+  margin: 0;
+}
+
+.stSearch button {
+  border: none;
+  outline: none;
+  background-color: #fefefe;
+}
+
+form {
+  width: 100%;
+  margin-left: 1vw;
+}
+
+.autocomplete {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 2vw;
+  background-color: #fefefe;
+  box-shadow: 0px 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.25);
+  padding: 0.5vw 1vw;
+  font-size: 1.3vw;
+  /* color: rgba(89, 96, 109, 0.5); */
+}
+
+.autocomplete-items {
+  position: absolute;
+  /* border: 1px solid #d4d4d4; */
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  /* border-bottom: 1px solid #d4d4d4; */
+}
+
+.autocomplete img {
+  width: 2vw;
+}
+
+#myInput {
+  border: none;
+  outline: none;
+  width: 100%;
+  /* color: rgba(89, 96, 109, 0.5); */
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  color: #ffffff;
+}
+
+.ihsg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1.5vw;
+  margin-bottom: 1vw;
+}
+
+.grafik {
+  font-family: "Poppins", sans-serif;
+  color: #59606d;
+  background: #f0f4ff;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  width: 48%;
+  padding: 1.5vw 2vw;
+}
+
+.judul {
+  display: flex;
+  align-items: flex-end;
+  width: 65%;
+  justify-content: space-around;
+}
+
+.judul h2 {
+  font-size: 1.8vw;
+  margin: 0;
+  font-weight: bold;
+}
+
+.judul p {
+  margin: 0;
+  font-size: 1.3vw;
+}
+
+.price {
+  display: flex;
+  width: 33%;
+  justify-content: space-between;
+  margin-bottom: 0.5vw;
+}
+
+.price h5 {
+  font-size: 1.3vw;
+  font-weight: bold;
+  margin: 0;
+}
+
+.persen {
+  display: flex;
+  align-items: flex-end;
+  color: red;
+}
+
+.persen h6 {
+  margin: 0;
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+
+.persen p {
+  font-size: 1vw;
+  margin: 0;
+  align-items: flex-end;
+}
+
+.period {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.time {
+  outline: none;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px 0.1px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  font-size: 1.3vw;
+  width: 4vw;
+  margin-bottom: 1vw;
+  font-weight: bold;
+  color: #59606d;
+  align-items: center;
+  justify-content: center;
+}
+
+.grafik img {
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid black; */
+  justify-content: space-between;
+  margin-top: 1vw;
+  padding: 0 2vw;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 23%;
+  /* border: 1px solid black; */
+  justify-content: space-between;
+}
+
+.box p {
+  font-size: 1.2vw;
+  margin: 0;
+}
+
+.box h6 {
+  font-size: 1.2vw;
+  margin: 0;
+  font-weight: bold;
+}
+
+#red {
+  color: red;
+}
+
+#green {
+  color: green;
+}
+
+.running {
+  font-size: 1.7vw;
+  font-weight: bold;
+}
+
+.trending {
+  margin-top: 2vw;
+  background: #f0f4ff;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  padding: 2vw 2.5vw;
+  padding-bottom: 1vw;
+  color: #59606d;
+}
+
+.trending h2 {
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+#emas {
+  background: #bdb252;
+  border-radius: 30px;
+  font-size: 1.5vw;
+  padding: 0.1vw 0;
+  margin-bottom: 1vw;
+  margin-left: -1vw;
+}
+
+#perak {
+  background: #adadad;
+  border-radius: 30px;
+  font-size: 1.5vw;
+  padding: 0.1vw 0;
+  margin-top: -0.5vw;
+  margin-left: -1vw;
+}
+
+#perunggu {
+  background: #a0616a;
+  border-radius: 30px;
+  font-size: 1.5vw;
+  padding: 0.1vw 0;
+  margin-top: -0.5vw;
+  margin-left: -1vw;
+}
+
+.peringkat {
+  width: 5%;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  position: absolute;
+}
+
+.case {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  display: flex;
+  padding: 0.5vw 2vw;
+  padding-left: 2vw;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5vw 0;
+}
+
+.case img {
+  width: 5.5vw;
+  height: 4vw;
+}
+
+.kiri {
+  display: flex;
+  align-items: center;
+}
+
+.case h2 {
+  font-size: 1.3vw;
+  margin: 0;
+}
+
+.case p {
+  font-size: 1.1vw;
+  margin: 0;
+}
+
+.cost p {
+  font-weight: bold;
+}
+
+.case h5 {
+  margin: 0;
+  font-size: 1.3vw;
+  font-weight: bold;
+}
+
+.cost {
+  text-align: right;
+}
+
+.namaSaham {
+  margin-left: 1vw;
+}
+
+.running-table {
+  /* border-collapse: collapse; */
+  font-size: 1vw;
+  margin: 0.5vw 0.3vw;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10vw;
+}
+
+.running-table tr td {
+  border-bottom: 3px solid #f5f5f5;
+  padding: 0.8vw 2.5vw;
+  background: #ffffff;
+  margin: 0;
+}
+
+.running-table thead {
+  background: #f5f5f5;
+  font-size: 1.2vw;
+  color: #adadbd;
+}
+
+a {
+  text-decoration: none;
+}
+
+.trending a {
+  color: #59606d;
+}
+
+.sector a {
+  color: #59606d;
+}
+
+.sector {
+  margin-top: 2vw;
+  background: #f0f4ff;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  padding: 2vw 2.5vw;
+  padding-bottom: 1vw;
+  color: #59606d;
+  margin-bottom: 1vw;
+}
+
+.sector h2 {
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+.Sec {
+  margin-top: 1vw;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 2vw;
+}
+
+.kit {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  width: 14vw;
+  text-align: center;
+  margin-bottom: 2vw;
+  padding: 1vw 0;
+}
+
+.kit img {
+  height: 6vw;
+  width: 6vw;
+}
+
+.kit h3 {
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin: 0;
+}
+
+.kit p {
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* awal footer */
+.footerTop {
+  background: rgba(112, 126, 177, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #59606d;
+  padding: 1.3vw 2vw;
+  font-size: 1.2vw;
+  flex-wrap: wrap;
+}
+
+.atas {
+  display: flex;
+  justify-content: row;
+}
+
+.explain {
+  width: 23%;
+}
+
+.explain h3 {
+  font-weight: bold;
+  font-size: 1.2vw;
+}
+
+.menu {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu h3 {
+  font-weight: bold;
+  font-size: 1.2vw;
+}
+
+.menu a {
+  font-size: 1.2vw;
+  margin-bottom: 1%;
+  text-decoration: none;
+  color: #59606d;
+}
+
+.title {
+  display: inline-flex;
+  border-bottom: 0.1vw solid #707eb1;
+  padding-right: 3vw;
+  align-items: center;
+  margin-bottom: 0.8vw;
+}
+
+.menu .title {
+  display: inline-flex;
+  border-bottom: 0.1vw solid #707eb1;
+  align-items: center;
+  margin-bottom: 0.8vw;
+  margin-right: 14vw;
+}
+
+.hub svg {
+  width: 2vw;
+  height: auto;
+}
+
+.location {
+  margin-left: 0.8vw;
+  text-align: center;
+}
+
+.hub {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  position: static;
+  margin-bottom: 0.8vw;
+}
+
+.hub > p {
+  margin: 0;
+}
+
+.hub > svg {
+  margin-right: 1vw;
+}
+
+.footerDown {
+  background: #707eb1;
+  display: flex;
+  color: #f0fff3;
+  margin-top: 0.4vw;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2vw;
+  align-items: center;
+  padding: 0.4vw;
+}
+
+.footerDown p {
+  margin: auto;
+}
+/* akhir footer */
