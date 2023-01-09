@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navbar Viscal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="/ASSETS/logo.png" type="image/x-icon" />
+    <link href="/navbar.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <!-- <nav class="navbar navbar-expand-lg bg-light"> -->
+    <navbar class="navbar navbar-expand-lg" style="background-color: #f0f4ff">
+      <div class="container-fluid">
+        <a class="navbar-brand align-items-center ms-4 mb-1" href="#">
+          <img src="/ASSETS/logo.png" alt="LOGO" width="70" height="70" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ms-4 me-4">
+              <a class="nav-link active" aria-current="page" style="color: #59606d; font-weight: bold; font-family: 'Poppins', sans-serif" href="#">COURSE</a>
+            </li>
+            <li class="nav-item ms-4 me-4">
+              <a class="nav-link" style="color: #59606d; font-weight: bold; font-family: 'Poppins', sans-serif" href="#">STOCKS</a>
+            </li>
+            <li class="nav-item ms-4 me-4">
+              <a class="nav-link" style="color: #59606d; font-weight: bold; font-family: 'Poppins', sans-serif" href="#">PORTOFOLIO</a>
+            </li>
+            <li class="nav-item ms-4 me-4">
+              <a class="nav-link" style="color: #59606d; font-weight: bold; font-family: 'Poppins', sans-serif" href="#">HISTORY</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+          <ul class="navbar-nav align-items-center me-4">
+            <li class="nav-item me-4">
+              <a class="nav-link" style="color: #59606d; font-weight: bold; font-family: 'Poppins', sans-serif">Halo, [username]!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #59606d" align-items-center href="#">
+                <svg width="70" height="70" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M106.996 99.72C112.741 92.8084 116.736 84.615 118.644 75.8327C120.552 67.0505 120.317 57.9378 117.959 49.2657C115.6 40.5935 111.188 32.6169 105.095 26.0107C99.0014 19.4045 91.4068 14.363 82.9531 11.3127C74.4994 8.26245 65.4354 7.29311 56.5279 8.48671C47.6203 9.68031 39.1313 13.0017 31.7789 18.17C24.4265 23.3383 18.427 30.2014 14.288 38.1787C10.149 46.156 7.99215 55.0128 8.00002 64C8.00304 77.0647 12.607 89.7111 21.004 99.72L20.924 99.788C21.204 100.124 21.524 100.412 21.812 100.744C22.172 101.156 22.56 101.544 22.932 101.944C24.052 103.16 25.204 104.328 26.412 105.424C26.78 105.76 27.16 106.072 27.532 106.392C28.812 107.496 30.128 108.544 31.492 109.52C31.668 109.64 31.828 109.796 32.004 109.92V109.872C41.3724 116.465 52.5484 120.003 64.004 120.003C75.4596 120.003 86.6356 116.465 96.004 109.872V109.92C96.18 109.796 96.336 109.64 96.516 109.52C97.876 108.54 99.196 107.496 100.476 106.392C100.848 106.072 101.228 105.756 101.596 105.424C102.804 104.324 103.956 103.16 105.076 101.944C105.448 101.544 105.832 101.156 106.196 100.744C106.48 100.412 106.804 100.124 107.084 99.784L106.996 99.72ZM64 32C67.5601 32 71.0402 33.0557 74.0003 35.0335C76.9604 37.0114 79.2675 39.8226 80.6299 43.1117C81.9922 46.4008 82.3487 50.02 81.6542 53.5116C80.9596 57.0033 79.2453 60.2106 76.7279 62.7279C74.2106 65.2453 71.0033 66.9596 67.5117 67.6541C64.02 68.3487 60.4008 67.9922 57.1117 66.6298C53.8227 65.2674 51.0114 62.9603 49.0336 60.0003C47.0557 57.0402 46 53.5601 46 50C46 45.2261 47.8964 40.6477 51.2721 37.2721C54.6478 33.8964 59.2261 32 64 32ZM32.028 99.72C32.0974 94.4679 34.2318 89.4542 37.9695 85.7637C41.7071 82.0733 46.7474 80.0027 52 80H76C81.2526 80.0027 86.293 82.0733 90.0306 85.7637C93.7682 89.4542 95.9026 94.4679 95.972 99.72C87.1994 107.625 75.8091 112 64 112C52.191 112 40.8007 107.625 32.028 99.72Z"
+                    fill="#59606D"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </navbar>
+    <!-- AKHIR NAVBAR -->
+  </body>
+</html>
